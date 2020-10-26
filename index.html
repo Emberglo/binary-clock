@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,300" rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Binary Clock</title>
+</head>
+<body>
+
+<!-- HEADER -->
+
+    <div class="header">
+      <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+              <h1>BINARY CLOCK</h1>
+            </div>
+          </div>
+      </div>
+    </div>
+
+<!-- CLOCK -->
+
+    <div class="clock">
+      <div class="container-fluid">
+        <div class="row">
+
+          <div class="col-2 col-md-3">
+          </div>
+
+          <div class="col-8 col-md-6">
+            <div class="container-fluid">
+              <div class="row">
+
+                <div class="col-2 hour1">
+                  <div id="h-1-8" class="circle inactive"></div>
+                  <div id="h-1-4" class="circle inactive"></div>
+                  <div id="h-1-2" class="circle active off h-1-2"></div>
+                  <div id="h-1-1" class="circle active off h-1-1"></div>
+                </div>
+                <div class="col-2 hour2">
+                  <div id="h-2-8" class="circle active off h-2-8"></div>
+                  <div id="h-2-4" class="circle active off h-2-4"></div>
+                  <div id="h-2-2" class="circle active off h-2-2"></div>
+                  <div id="h-2-1" class="circle active off h-2-1"></div>
+                </div>
+                <div class="col-2 minute1">
+                  <div id="m-1-8" class="circle inactive"></div>
+                  <div id="m-1-4" class="circle active off m-1-4"></div>
+                  <div id="m-1-2" class="circle active off m-1-2"></div>
+                  <div id="m-1-1" class="circle active off m-1-1"></div>
+                </div>
+                <div class="col-2 minute2">
+                  <div id="m-2-8" class="circle active off m-2-8"></div>
+                  <div id="m-2-4" class="circle active off m-2-4"></div>
+                  <div id="m-2-2" class="circle active off m-2-2"></div>
+                  <div id="m-2-1" class="circle active off m-2-1"></div>
+                </div>
+                <div class="col-2 second1">
+                  <div id="s-1-8" class="circle inactive"></div>
+                  <div id="s-1-4" class="circle active off s-1-4"></div>
+                  <div id="s-1-2" class="circle active off s-1-2"></div>
+                  <div id="s-1-1" class="circle active off s-1-1"></div>
+                </div>
+                <div class="col-2 second2">
+                  <div id="s-2-8" class="circle active off s-2-8"></div>
+                  <div id="s-2-4" class="circle active off s-2-4"></div>
+                  <div id="s-2-2" class="circle active off s-2-2"></div>
+                  <div id="s-2-1" class="circle active off s-2-1"></div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-2 col-md-3">
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+<!-- BINARY -->
+
+    <div class="bin">
+      <div class="container-fluid">
+        <div class="row">
+
+          <div class="col-2 col-md-3">
+          </div>
+
+          <div class="col-8 col-md-6">
+            <div class="container-fluid">
+              <div class="row">
+
+                <div class="col-2 bin-hour1">
+                  <p><span id="bin-h-1-1" class="bin-h-1-1">0</span> + <span id="bin-h-1-2" class="bin-h-1-2">0</span><span id="bin-h-1-4" class="bin-h-1-4 disappear">0</span><span id="bin-h-1-8" class="bin-h-1-8 disappear">0</span></p>
+                </div>
+
+                <div class="col-2 bin-hour2">
+                  <p><span id="bin-h-2-1" class="bin-h-2-1">0</span> + <span id="bin-h-2-2" class="bin-h-2-2">0</span> + <span id="bin-h-2-4" class="bin-h-2-4">0</span> + <span id="bin-h-2-8" class="bin-h-2-8">0</span></p>
+                </div>
+
+                <div class="col-2 bin-minute1">
+                  <p><span id="bin-m-1-1" class="bin-m-1-1">0</span> + <span id="bin-m-1-2" class="bin-m-1-2">0</span> + <span id="bin-m-1-4" class="bin-m-1-4">0</span><span id="bin-m-1-8" class="bin-m-1-8 disappear">0</span></p>
+                </div>
+
+                <div class="col-2 bin-minute2">
+                  <p><span id="bin-m-2-1" class="bin-m-2-1">0</span> + <span id="bin-m-2-2" class="bin-m-2-2">0</span> + <span id="bin-m-2-4" class="bin-m-2-4">0</span> + <span id="bin-m-2-8" class="bin-m-2-8">0</span></p>
+                </div>
+
+                <div class="col-2 bin-second1">
+                  <p><span id="bin-s-1-1" class="bin-s-1-1">0</span> + <span id="bin-s-1-2" class="bin-s-1-2">0</span> + <span id="bin-s-1-4" class="bin-s-1-4">0</span><span id="bin-s-1-8" class="bin-s-1-8 disappear">0</span></p>
+                </div>
+
+                <div class="col-2 bin-second2">
+                  <p><span id="bin-s-2-1" class="bin-s-2-1">0</span> + <span id="bin-s-2-2" class="bin-s-2-2">0</span> + <span id="bin-s-2-4" class="bin-s-2-4">0</span> + <span id="bin-s-2-8" class="bin-s-2-8">0</span></p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-2 col-md-3">
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+<!-- DECIMAL -->
+
+    <div class="dec">
+      <div class="container-fluid">
+        <div class="row">
+
+          <div class="col-2 col-md-3">
+          </div>
+
+          <div class="col-8 col-md-6">
+            <div class="container-fluid">
+              <div class="row">
+
+                <div class="col-2 dec-hour1">
+                  <p id="dec-hour1">0</p>
+                </div>
+
+                <div class="col-2 dec-hour2">
+                  <p id="dec-hour2">0</p>
+                </div>
+
+                <div class="col-2 dec-minute1">
+                  <p id="dec-minute1">0</p>
+                </div>
+
+                <div class="col-2 dec-minute2">
+                  <p id="dec-minute2">0</p>
+                </div>
+
+                <div class="col-2 dec-second1">
+                  <p id="dec-second1">0</p>
+                </div>
+
+                <div class="col-2 dec-second2">
+                  <p id="dec-second2">0</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-2 col-md-3">
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+<!-- HELP MODAL -->
+
+    <!-- <div id="Modal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <div class="modal-content">
+
+          <div>
+            <button type="button" class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></button>
+            <h1>A bit of help...</h1>
+          </div>
+
+          <div class="modal-body">
+            <ul class="modal-list">
+              <li>Press <b>h</b> to toggle this useful help message.</li>
+              <li>Press <b>t</b> to make appear or disappear the title.</li>
+              <li>Press <b>b</b> to make appear or disappear the binary calculations.</li>
+              <li>Press <b>c</b> to make appear or disappear the digital clock.</li>              
+            </ul>
+            <p>CHEERS!</p>
+          </div>
+
+        </div>
+
+      </div>
+    </div> -->
+    
+    
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
